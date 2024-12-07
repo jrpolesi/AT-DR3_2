@@ -49,36 +49,8 @@ const OPTIONS = [
     label: "Plutão",
   },
   {
-    key: "ceres",
-    label: "Ceres",
-  },
-  {
-    key: "makemake",
-    label: "Makemake",
-  },
-  {
-    key: "haumea",
-    label: "Haumea",
-  },
-  {
-    key: "eris",
-    label: "Eris",
-  },
-  {
-    key: "vesta",
-    label: "Vesta",
-  },
-  {
-    key: "pallas",
-    label: "Pallas",
-  },
-  {
-    key: "hygiea",
-    label: "Hygiea",
-  },
-  {
-    key: "iris",
-    label: "Iris",
+    key: "asteroid",
+    label: "Asteróide",
   },
 ];
 

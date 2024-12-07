@@ -8,7 +8,7 @@ export function ImageDetails({
   photographer,
   secondaryCreator,
 }) {
-  const formattedKeywords = keywords.join(" / ");
+  const formattedKeywords = keywords?.join(" / ");
 
   return (
     <View style={styles.container}>
@@ -17,13 +17,9 @@ export function ImageDetails({
       <Image source={{ uri: href }} style={styles.image} />
       <ScrollView style={styles.details}>
         <Text style={styles.description}>{description}</Text>
-        {photographer && (
-          <Text style={styles.photographer}>Photographer: {photographer}</Text>
-        )}
+        {photographer && <Text style={styles.author}>{photographer}</Text>}
         {secondaryCreator && (
-          <Text style={styles.secondaryCreator}>
-            Secondary Creator: {secondaryCreator}
-          </Text>
+          <Text style={styles.author}>{secondaryCreator}</Text>
         )}
 
         <Text style={styles.keywords}>{formattedKeywords}</Text>
@@ -51,18 +47,22 @@ const styles = StyleSheet.create({
     color: "#333",
     marginBottom: 10,
   },
+  author: {
+    fontStyle: "italic",
+    fontSize: 16,
+  },
   details: {
-    gap: 10,
     flex: 1,
     marginBottom: 20,
     marginTop: 5,
   },
   description: {
     fontSize: 16,
+    marginBottom: 10,
   },
   keywords: {
     fontSize: 14,
     color: "#004085",
-    marginTop: 10,
+    marginTop: 15,
   },
 });

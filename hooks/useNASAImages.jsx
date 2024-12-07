@@ -25,7 +25,7 @@ export function useNASAImages(options) {
         keywords,
         photographer,
         secondary_creator,
-      } = data[0];
+      } = data[0] ?? {};
 
       return {
         title,
