@@ -90,6 +90,7 @@ export function useInfinityQuery(queryFn, options, onError) {
     },
     data,
     isLoading: state.isLoading,
+    isRefreshing: !!data && state.isLoading,
     error: state.error,
   };
 }

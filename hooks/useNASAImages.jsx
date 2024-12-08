@@ -3,7 +3,7 @@ import { api } from "../api/api";
 import { useInfinityQuery } from "./useInfinityQuery";
 
 export function useNASAImages(options) {
-  const { data, error, isLoading, pagination } = useInfinityQuery(
+  const { data, error, isLoading, pagination,isRefreshing } = useInfinityQuery(
     api.getNASAImages,
     options
   );
@@ -43,6 +43,7 @@ export function useNASAImages(options) {
     data: normalizedData ?? null,
     error,
     isLoading,
+    isRefreshing,
     pagination,
   };
 }
