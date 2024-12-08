@@ -1,6 +1,6 @@
 import { useMemo } from "react";
-import { api } from "../api/api";
-import { useInfinityQuery } from "./useInfinityQuery";
+import { api } from "../api/api.js";
+import { useInfinityQuery } from "./useInfinityQuery.jsx";
 
 export function useNASAImages(options) {
   const { data, error, isLoading, pagination,isRefreshing } = useInfinityQuery(

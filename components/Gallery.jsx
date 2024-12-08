@@ -1,7 +1,7 @@
 import { ActivityIndicator, FlatList, StyleSheet, View } from "react-native";
-import { useNASAImages } from "../hooks/useNASAImages";
-import { GalleryItem } from "./GalleryItem";
-import { ProgressBar } from "./ProgressBar";
+import { useNASAImages } from "../hooks/useNASAImages.jsx";
+import { GalleryItem } from "./GalleryItem.jsx";
+import { ProgressBar } from "./ProgressBar.jsx";
 
 export function Gallery({ query, onImageClick }) {
   const {

@@ -1,6 +1,6 @@
 import { SafeAreaView, StyleSheet } from "react-native";
-import { Navigation } from "./components/Navigation";
-import { ToastErrorProvider } from "./contexts/ToastError";
+import { Navigation } from "./components/Navigation.jsx";
+import { ToastErrorProvider } from "./contexts/ToastError.jsx";
 
 export default function App() {
   return (
